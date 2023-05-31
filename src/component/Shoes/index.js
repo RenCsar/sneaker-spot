@@ -1,9 +1,9 @@
 import { Text, TouchableOpacity, Image, StyleSheet, View } from "react-native";
 import React from "react";
 
-export default function Shoes({ img, name, preco }) {
+export default function Shoes({ img, name, preco, onClick }) {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onClick}>
       <View style={styles.container}>
         <Image source={img} style={styles.shoesImg} />
         <Text style={styles.nome}>{name}</Text>

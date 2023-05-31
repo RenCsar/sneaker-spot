@@ -9,7 +9,6 @@ import {
 } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import ShoesList from "../../component/List";
-import HorizontalList from "../../component/HorizontalList";
 
 export default function Home() {
   return (
@@ -33,7 +32,7 @@ export default function Home() {
         <Text style={[styles.text, { marginTop: 10 }]}>LANÇAMENTOS</Text>
         <ScrollView style={{}}>
           <View style={styles.scrollContainer}>
-            <ShoesList />
+            <ShoesList/>
           </View>
         </ScrollView>
       </View>
