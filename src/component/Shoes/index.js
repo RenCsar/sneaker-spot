@@ -24,4 +24,7 @@ const styles = StyleSheet.create({
   nome: {
     fontWeight: "700",
   },
+  preco :{
+    color: '#aaa'
+  }
 });

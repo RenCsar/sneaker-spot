@@ -9,7 +9,7 @@ export default function ShoesList() {
   return (
     <>
       {productList.map((item) => (
-        <Shoes key={item.id} {...item} onClick={()=> navigation.navigate('Detail')} />
+        <Shoes key={item.id} {...item} onClick={()=> navigation.navigate('Detail', {...item})} />
       ))}
     </>
   );
