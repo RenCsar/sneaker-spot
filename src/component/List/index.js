@@ -4,12 +4,16 @@ import { productList } from "../../data";
 import { useNavigation } from "@react-navigation/native";
 
 export default function ShoesList() {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
 
   return (
     <>
       {productList.map((item) => (
-        <Shoes key={item.id} {...item} onClick={()=> navigation.navigate('Detail', {...item})} />
+        <Shoes
+          key={item.id}
+          {...item}
+          onClick={() => navigation.navigate("Detail", { ...item })}
+        />
       ))}
     </>
   );

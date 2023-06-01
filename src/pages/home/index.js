@@ -32,7 +32,7 @@ export default function Home() {
         <Text style={[styles.text, { marginTop: 10 }]}>LANÇAMENTOS</Text>
         <ScrollView style={{}}>
           <View style={styles.scrollContainer}>
-            <ShoesList/>
+            <ShoesList />
           </View>
         </ScrollView>
       </View>
@@ -68,9 +68,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
   },
   scrollContainer: {
-    justifyContent:'space-around',
+    justifyContent: "space-around",
     marginBottom: 300,
-    flexDirection:'row',
-    flexWrap: 'wrap'
-  }
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
 });

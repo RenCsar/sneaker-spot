@@ -1,14 +1,18 @@
 import { View, Text, ScrollView, Image, StyleSheet } from "react-native";
-import React from "react";
+import React, { useEffect } from "react";
 import TamanhoList from "../../component/TamanhoList";
 import DotList from "../../component/DotList";
+import Button from "../../component/Button";
+import HorizontalList from "../../component/HorizontalList";
 
 export default function Detail({ navigation, route }) {
   const { name, preco, imgDetail, tamanhos, cores, descricao } = route.params;
 
-  navigation.setOptions({
-    headerTitle: name,
-  });
+  useEffect(()=>{
+    navigation.setOptions({
+      headerTitle: name,
+    });
+  }, [])
 
   return (
     <ScrollView style={styles.container}>
@@ -36,6 +40,12 @@ export default function Detail({ navigation, route }) {
           <Text style={styles.textContent}>{descricao}</Text>
           <Text style={styles.textList}>-Categoria: Amortecimento</Text>
           <Text style={styles.textList}>-Material: Mesh</Text>
+        </View>
+        <Button />
+        <View style={styles.line} />
+        <View style={{ marginVertical: "5%" }}>
+          <Text style={styles.textFooter}>VOCÊ TAMBÉM PODE GOSTAR</Text>
+          <HorizontalList />
         </View>
       </View>
     </ScrollView>
@@ -71,16 +81,27 @@ const styles = StyleSheet.create({
   textContent: {
     fontSize: 16,
     lineHeight: 25,
-    marginVertical:'2%',
-    paddingHorizontal: '2%',
+    marginVertical: "2%",
+    paddingHorizontal: "2%",
   },
   textTitle: {
     fontSize: 22,
-    marginVertical: '2%',
-    fontWeight: '600',
+    marginVertical: "2%",
+    fontWeight: "600",
   },
   textList: {
     fontSize: 16,
     lineHeight: 25,
-  }
+  },
+  line: {
+    borderWidth: 1,
+    borderBottomColor: "#ddd",
+    marginVertical: "2%",
+  },
+  textFooter: {
+    fontFamily: "Anton_400Regular",
+    fontSize: 22,
+    marginHorizontal: "1%",
+    marginBottom: "5%",
+  },
 });
