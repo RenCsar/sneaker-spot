@@ -19,7 +19,7 @@ export const productList = [
     img: nikeAirMax,
     imgDetail: nikeAirMaxD,
     tamanhos: [{tamanho: 38}, {tamanho: 39}, {tamanho: 40}, {tamanho: 41}],
-    cores: [{cor: 'black'}, {cor: '#2379f4'}, {cor: '#fb6e53'}, {cor: '#ddd'},]
+    cores: [{cor: 'black'}, {cor: '#2379f4'}, {cor: '#fb6e53'}, {cor: '#ddd'}],
   },
   {
     id: 2,
@@ -28,6 +28,7 @@ export const productList = [
     img: nikeDownshifter,
     imgDetail: nikeDownshifterD,
     tamanhos: [{tamanho: 37}, {tamanho: 39}, {tamanho: 40}, {tamanho: 41}],
+    cores: [{cor: 'black'}, {cor: '#2379f4'}, {cor: '#fb6e53'}, {cor: '#ddd'}],
   },
   {
     id: 3,
@@ -36,6 +37,7 @@ export const productList = [
     img: nikeSquidward,
     imgDetail: nikeSquidwardD,
     tamanhos: [{tamanho: 35}, {tamanho: 37}],
+    cores: [{cor: '#2379f4'}, {cor: 'red'}],
   },
   {
     id: 4,
@@ -44,6 +46,7 @@ export const productList = [
     img: nikeEpic,
     imgDetail: nikeEpicD,
     tamanhos: [{tamanho: 38}, {tamanho: 39}, {tamanho: 40}, {tamanho: 41}, {tamanho: 42}],
+    cores: [{cor: 'black'}, {cor: '#2379f4'}, {cor: '#fb6e53'}, {cor: 'green'}],
   },
   {
     id: 5,
@@ -52,6 +55,7 @@ export const productList = [
     img: nikeJoyride,
     imgDetail: nikeJoyrideD,
     tamanhos: [{tamanho: 35}, {tamanho: 37}, {tamanho: 38}, {tamanho: 39}, {tamanho: 40}, {tamanho: 41}, {tamanho: 42}],
+    cores: [{cor: 'black'}, {cor: '#2379f4'}, {cor: '#fb6e53'}, {cor: '#ddd'}],
   },
   {
     id: 6,
@@ -60,5 +64,6 @@ export const productList = [
     img: nikeAirMaxDia,
     imgDetail: nikeAirMaxDiaD,
     tamanhos: [{tamanho: 38}, {tamanho: 39}, {tamanho: 40}, {tamanho: 41}, {tamanho: 42}],
+    cores: [{cor: 'black'}, {cor: '#2379f4'}, {cor: '#fb6e53'}, {cor: '#ddd'}],
   },
 ];
