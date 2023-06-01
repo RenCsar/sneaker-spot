@@ -4,7 +4,7 @@ import TamanhoList from "../../component/TamanhoList";
 import DotList from "../../component/DotList";
 
 export default function Detail({ navigation, route }) {
-  const { name, preco, imgDetail, tamanhos, cores } = route.params;
+  const { name, preco, imgDetail, tamanhos, cores, descricao } = route.params;
 
   navigation.setOptions({
     headerTitle: name,
@@ -30,6 +30,12 @@ export default function Detail({ navigation, route }) {
         </View>
         <View style={styles.tamanhoContainer}>
           <TamanhoList tamanhos={tamanhos} />
+        </View>
+        <View style={styles.textContent}>
+          <Text style={styles.textTitle}>{name}</Text>
+          <Text style={styles.textContent}>{descricao}</Text>
+          <Text style={styles.textList}>-Categoria: Amortecimento</Text>
+          <Text style={styles.textList}>-Material: Mesh</Text>
         </View>
       </View>
     </ScrollView>
@@ -62,4 +68,19 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     width: "100%",
   },
+  textContent: {
+    fontSize: 16,
+    lineHeight: 25,
+    marginVertical:'2%',
+    paddingHorizontal: '2%',
+  },
+  textTitle: {
+    fontSize: 22,
+    marginVertical: '2%',
+    fontWeight: '600',
+  },
+  textList: {
+    fontSize: 16,
+    lineHeight: 25,
+  }
 });
